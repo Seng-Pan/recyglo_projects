@@ -2,7 +2,7 @@ import React from 'react'
 import { FaUser } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RiLockPasswordFill } from 'react-icons/ri';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
     const navigate = useNavigate();
@@ -11,12 +11,16 @@ function LoginPage() {
         navigate("/SignIn_UpPage")
     }
 
+    const clicklogin = async() =>{
+      navigate("Apple")
+    }
+
     return (
         <div className="flex items-center justify-center h-screen bg-100" style={{background:'#dff0d8'}}>
           <div className="bg-white rounded-2xl p-8 w-96 shadow-lg">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-teal-500 mb-2">Login</h2>
-              <div className="w-16 h-1 bg-teal-500 mx-auto rounded"></div>
+              <h2 className="text-3xl font-bold text-500 mb-2" style={{color:'#76B156'}}>Login</h2>
+              <div className="w-16 h-1 bg-500 mx-auto rounded" style={{background:'#76B156'}}></div>
             </div>
     
             <div className="space-y-6">
@@ -48,12 +52,12 @@ function LoginPage() {
     
             <div className="text-center mt-4">
               <a href="#" className="text-sm text-gray-500 hover:text-teal-500">
-                Forgot password? <span className="text-teal-500 cursor-pointer">Click Here!</span>
+                Forgot password? <span className="text-500 cursor-pointer" style={{color:'#76B156'}}>Click Here!</span>
               </a>
             </div>
     
             <div className="mt-8 flex justify-center">
-              <button className="bg-teal-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition">
+              <button className="bg-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition" style={{background:'#76B156'}} onClick={clicklogin}>
                 Login
               </button>
             </div>
@@ -61,7 +65,7 @@ function LoginPage() {
             <hr className="mt-8 border-gray-400 w-72" />
 
             <div className="mt-8 flex justify-center">
-              <button className="bg-green-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition" onClick={clicknewbtn}>
+              <button className="bg-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition" onClick={clicknewbtn} style={{background:'#4D9724'}}>
                 Create new account
               </button>
             </div>
@@ -72,3 +76,4 @@ function LoginPage() {
 }
 
 export default LoginPage
+
