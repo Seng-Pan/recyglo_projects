@@ -16,11 +16,11 @@ function LoginPage() {
     }
 
     return (
-        <div className="flex items-center justify-center h-screen bg-100" style={{background:'#dff0d8'}}>
+        <div className="flex items-center justify-center h-screen bg-green-100">
           <div className="bg-white rounded-2xl p-8 w-96 shadow-lg">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-500 mb-2" style={{color:'#76B156'}}>Login</h2>
-              <div className="w-16 h-1 bg-500 mx-auto rounded" style={{background:'#76B156'}}></div>
+              <h2 className="text-3xl font-bold text-500 mb-2" style={{color:'#006600'}}>Login</h2>
+              <div className="w-16 h-1 bg-500 mx-auto rounded" style={{background:'#006600'}}></div>
             </div>
     
             <div className="space-y-6">
@@ -51,13 +51,13 @@ function LoginPage() {
             </div>
     
             <div className="text-center mt-4">
-              <a href="#" className="text-sm text-gray-500 hover:text-teal-500">
+              <a href="#" className="text-sm text-gray-500 hover:text-green-500">
                 Forgot password? <span className="text-500 cursor-pointer" style={{color:'#76B156'}}>Click Here!</span>
               </a>
             </div>
     
             <div className="mt-8 flex justify-center">
-              <button className="bg-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition" style={{background:'#76B156'}} onClick={clicklogin}>
+              <button className="bg-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition" style={{background:'#006600'}} onClick={clicklogin}>
                 Login
               </button>
             </div>
@@ -65,7 +65,7 @@ function LoginPage() {
             <hr className="mt-8 border-gray-400 w-72" />
 
             <div className="mt-8 flex justify-center">
-              <button className="bg-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition" onClick={clicknewbtn} style={{background:'#4D9724'}}>
+              <button className="bg-500 text-white font-bold py-2 px-6 rounded-full hover:bg-teal-600 transition" onClick={clicknewbtn} style={{background:' #008000', opacity:'0.9'}}>
                 Create new account
               </button>
             </div>

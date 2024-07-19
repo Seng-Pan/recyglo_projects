@@ -89,7 +89,7 @@ function Apple() {
 
     const Menus = [
         { title: "Home", src: <FaHome /> },
-        { title: "About", src: <RiContactsBook2Fill /> },
+        { title: "About us", src: <RiContactsBook2Fill /> },
         { title: "Info", src: <FaInfoCircle />, gap: true },
         { title: "Services", src: <RiServiceFill /> },
         { title: "Contact", src: <IoMdContact /> },
@@ -100,8 +100,8 @@ function Apple() {
 
             {/* Sidebar */}
             <div className="flex">
-                <div className={`${open ? 'w-72' : 'w-20'} duration-300 h-screen relative`} style={{ background: '#6fdcae' }}>
-                    <img src={control} className={`absolute text-slate-900 text-3xl cursor-pointer rounded-full -right-3 top-12 w-7 border-4 border-emerald-500 ${!open && "rotate-180"}`} onClick={() => setOpen(!open)} />
+                <div className={`${open ? 'w-72' : 'w-20'} duration-300 h-screen relative`} style={{ background: '#003300', opacity:'0.9' }}>
+                    <img src={control} className={`absolute text-slate-900 text-3xl cursor-pointer rounded-full -right-3 top-12 w-7 border-4 border-green-700 ${!open && "rotate-180"}`} onClick={() => setOpen(!open)} />
 
                     <div className='flex gap-x-4 items-center mt-2 ml-4'>
                         <img src={logo} alt='logo' className={`cursor-pointer rounded-full duration-500 size-8 mt-2 ml-2 ${open && 'rotate-[360deg]'}`} />
@@ -110,7 +110,7 @@ function Apple() {
 
                     <ul className='pt-6'>
                         {Menus.map((menu, index) => (
-                            <li key={index} className={`text-white flex items-center gap-x-4 cursor-pointer p-2 hover:bg-teal-500 rounded-md ${menu.gap ? 'mt-9' : 'mt-2'} ${index === 0 && 'bg-teal-500'}`}>
+                            <li key={index} className={`text-white flex items-center gap-x-4 cursor-pointer p-2 hover:bg-green-400 hover:bg-opacity-55 rounded-md ${menu.gap ? 'mt-9' : 'mt-2'} ${index === 0 && 'bg-green-400 bg-opacity-55'}`}>
                                 <span> </span>{menu.src} <span className={`${!open && 'hidden'} origin-left duration-200`}>{menu.title}</span>
                             </li>
                         ))}
@@ -118,8 +118,8 @@ function Apple() {
                 </div>
 
                 {/* Apple */}
-                <div className='pl-3 flex-1 h-screen bg-green-200'>
-                    <div className="flex items-center justify-center h-screen bg-green-200">
+                <div className='pl-3 flex-1 h-screen bg-green-100'>
+                    <div className="flex items-center justify-center h-screen bg-green-100">
                         <div className="text-center">
                             <h1 className="text-2xl font-bold mb-6">Apple Inc.</h1>
                             <div className="flex flex-col items-center space-y-4">
